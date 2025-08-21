@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' , sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+
+}
+.wrap{
+    position: relative;
+    width: 750px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgb(160, 160, 160);
+    box-shadow: 0 0 25px rgb(161, 161, 161);
+    overflow: hidden;
+
+}
+.wrap .form-box{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 110%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.wrap .form-box.Login{
+    left: 0;
+    padding: 0 60px 0 40px;
+
+}
+
+.wrap .form-box.Login .animation{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+}
+
+
+.wrap.active .form-box.Login .animation{
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition-delay: calc(.1s * var(--i));
+}
+
+
+.wrap .form-box.Register{
+    right: 0;
+    padding: 0 40px 0 60px;
+    pointer-events: none;
+}
+
+.wrap.active .form-box.Register{
+    pointer-events: auto;
+
+
+}
+
+.wrap .form-box.Register .animation{
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+
+}
+
+.wrap.active .form-box.Register .animation{
+
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
+}
+
+
+.form-box h2{
+    font-size: 35px;
+    display: flex;
+    color: antiquewhite;
+    text-align: center;
+
+}
+.form-box .inpt-box{
+    position: relative;
+    right: 0;
+    width: 60%;
+    height: 70px;
+    margin: 10px 0;
+
+}
+.inpt-box input{
+    width: 130%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+.inpt-box input:focus,
+.inpt-box input:valid{
+    border-bottom-color:rgb(129, 122, 122) ;
+
+}
+.inpt-box label{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translateY(-10%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .4s;
+
+}
+.inpt-box input:focus~label,
+.inpt-box input:valid~label{
+    top: -4px;
+    color: rgb(65, 65, 65);
+
+}
+.inpt-box i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transform: translateX(400%);
+    font-size: 18px;
+    color: #fff;
+    transition: .5s;
+
+
+}
+.inpt-box input:focus~i,
+.inpt-box input:valid~i{
+    color: rgb(65, 65, 65);
+
+
+}
+.btn{
+    position: relative;
+    width: 85%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #131414;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3000%;
+    background: linear-gradient(#131414 , rgb(161, 161, 161) , #131414 ,rgb(161, 161, 161));
+    z-index: -1;
+    transition: .5s;
+
+
+}
+.btn:hover:before{
+    top: 0;
+}
+.form-box .log-link{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 30px;
+
+}
+.log-link p a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.log-link p a:hover{
+    text-decoration: underline;
+
+}
+
+
+.wrap .info-text{
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.wrap .info-text.Login {
+    right: 0;
+    text-align: right;
+    padding: 0 20px 60px 120px;
+}
+
+.wrap .info-text.Login .animation{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+}
+
+
+.wrap.active .info-text.Login .animation{
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.wrap .info-text.Register{
+left: 0;
+text-align: left;
+padding: 0 150px 60px 40px;
+pointer-events: none;
+
+
+
+}
+
+.wrap.active .info-text.Register{
+
+    pointer-events: auto;
+}
+
+.wrap .info-text.Register .animation{
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+
+}
+
+.wrap.active .info-text.Register .animation{
+
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.info-text h2{
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+}
+.info-text p{
+    font-size: 16px;
+    color: #fff;
+
+}
+.wrap .bg-animate{
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(40deg , #e9e0e0 , rgb(59, 59, 59));
+    border-bottom: 1px solid rgb(124, 124, 124);
+    transform: rotate(9deg) skewY(40deg);
+    transform-origin: bottom right;
+    transition: 1.5s ease;
+    transition-delay: 1.6s;
+
+}
+
+.wrap.active .bg-animate{
+
+    transform: rotate(0) skewY(0);
+    transition-delay: .5s;
+
+
+}
+
+.wrap .bg-animate2{
+    position: absolute;
+    top: 50%;
+    left: 750px;
+    width: 600px;
+    height: 700px;
+    background: #131414;
+    border-top: 3px solid rgb(24, 23, 26);
+    transform: rotate(0) skewY(0);
+    transform-origin: bottom left;
+    transition: 1.5s ease;
+    transition-delay: .5s;
+
+}
+
+.wrap.active .bg-animate2{
+
+    transform: rotate(-9deg) skewY(-40deg);
+    transition-delay: 1.2s;
+
+}
+input {
+    background-color: #333; /* dark gray */
+    color: #fff; /* text color white */
+    border: 1px solid #555; /* optional, for better borders */
+}
+
+input::placeholder {
+    color: #ccc; /* lighter placeholder text */
+}

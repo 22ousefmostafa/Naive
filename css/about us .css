@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0c0c0c;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.about-us {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  margin: 40px auto;
+  max-width: 960px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.about-us h1 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  position: relative;
+  color: #222;
+}
+
+.about-us h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff6347;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.video-section {
+  margin: 30px auto;
+}
+
+.video-section video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.video-section video:hover {
+  transform: scale(1.01);
+}
+
+.text-section {
+  font-size: 24px;
+  color: #444;
+  margin: 40px auto;
+  padding: 0 15px;
+  max-width: 700px;
+}
+
+.images-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.images-section img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images-section img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgb(0,0,0,0.2);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .about-us {
+    padding: 25px 15px;
+  }
+
+  .about-us h1 {
+    font-size: 28px;
+  }
+
+  .images-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-section {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,86 @@
+/* General Body Styling */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Customization */
+.navbar {
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff ;
+}
+
+.nav-link {
+    color: #d1d1d1 ;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffffff  ;
+}
+
+/* Product Card Styling */
+.card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Add to Cart Button */
+.btn-dark {
+    background-color: #343a40;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #212529;
+}
+
+/* Responsive image inside card */
+.card-img-top {
+    object-fit: cover;
+    height: 380px;
+    width: 100%;
+}
+.line-with-text {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    line-height: 0.1em;
+    margin: 40px 0 20px;
+}
+
+.line-with-text span {
+    background: #f8f9fa; /* Same as your background */
+    padding: 0 10px;
+    font-size: 24px;
+    font-weight: italic;
+}
