@@ -1,103 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAIVE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/home.css">
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naive</title>
+    <link rel="stylesheet" href="./css/Home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navbar -->
 
-    <header>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">NAIVE</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">On sale</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Shop
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#" tabindex="-1" aria-disabled="false">Brand</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<main>
+    <!-- Top Offer Banner -->
+    <div class="top-banner">
+        <p>Sign up and get 20% off on your first order. <a href="#">Sign Up Now</a></p>
     </div>
-  </div>
-</nav>
 
+    <!-- Header -->
+    <header>
+        <div class="logo">NAIVE</div>
+        <nav>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products..." />
+            <i class="fas fa-search"></i>
+        </div>
+      <!-- cart icon  -->
+      <a href="#" class="p-2">
+        <img src="./img/Frame (1).png" alt="cart" height="28">
+      </a>
+
+      <!--  profile icon -->
+      <a href="#" class="p-2">
+        <img id="headerProfileImg" src="./img/Frame.png" alt="User Profile" height="28" class="rounded-circle border border-light">
+      </a>
+
+      <!-- log out button  -->
+      <button>log out</button>
     </header>
-
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>FIND CLOTHES<br>THAT MATCHES<br>YOUR STYLE</h1>
-                <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-                <a href="#" class="shop-btn">Shop Now</a>
+        <div class="hero-text">
+            <h1>FIND CLOTHES <br> THAT MATCHES <br> YOUR STYLE</h1>
+            <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+            <button>Shop Now</button>
 
-                <div class="stats">
-                    <div class="stat-item">
-                        <div class="stat-number">200+</div>
-                        <div class="stat-text">International Brands</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">2,000+</div>
-                        <div class="stat-text">High-Quality Products</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">30,000+</div>
-                        <div class="stat-text">Happy Customers</div>
-                    </div>
-                </div>
-            </div>
+<section class="stats">
+    <div class="counter-box">
+        <h2 class="counter" data-target="200">0</h2>
+        <p>International Brands</p>
+    </div>
+    <div class="counter-box">
+        <h2 class="counter" data-target="2000">0</h2>
+        <p>High-Quality Products</p>
+    </div>
+    <div class="counter-box">
+        <h2 class="counter" data-target="30000">0</h2>
+        <p>Happy Customers</p>
+    </div>
+</section>
 
-            <div class="hero-image">
-                <div class="image-placeholder"></div>
-            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="./img/Rectangle 2.png" alt="Fashion Model" />
         </div>
     </section>
 
-
-    <!-- Brands Section -->
+    <!-- Brand Logos -->
     <section class="brands">
-        <div class="container">
-            <div class="brands-content">
-                <div class="brand">VERSACE</div>
-                <div class="brand">ZARA</div>
-                <div class="brand">GUCCI</div>
-                <div class="brand">PRADA</div>
-                <div class="brand">CALVIN KLEIN</div>
-            </div>
-        </div>
+        <img src="./img/Group (1).png" alt="Versace" />
+        <img src="./img/zara-logo-1 1.png" alt="Zara" />
+        <img src="./img/gucci-logo-1 1.png" alt="Gucci" />
+        <img src="./img/prada-logo-1 1.png" alt="Prada" />
+        <img src="./img/Group.png" alt="Calvin Klein" />
     </section>
 
+
+<!-- TOP SELLING -->
+<section class="product-section">
+    <h1>TOP SELLING</h1>
+    <div class="products-container" id="top-selling"></div>
+    <div class="view-all">
+    <button id="viewAllTop">View All Top Selling</button>
+    </div>
+</section>
+
+
+<!-- NEW ARRIVALS -->
+<section class="product-section">
+    <h1>NEW ARRIVALS</h1>
+    <div class="products-container" id="new-arrivals"></div>
+    <div class="view-all">
+    <button id="viewAllNew">View All Top Selling</button>
+    </div>
+</section>
+
+
+<!-- BEST OFFERS -->
+<section class="product-section">
+    <h1>BEST OFFERS</h1>
+    <div class="products-container" id="best-offers"></div>
+    <div class="view-all">
+    <button id="viewAllOffers">View All Best Offers</button>
+    </div>
+</section>
+
+
+<!-- Notification Box -->
+<div id="notification" class="notification"></div>
+
+
+<div class="container">
+    <div class="word">BROWSE BY DRESS STYLE</div>
+    <div class="grid">
+      <div class="card">
+        <img src="./img/Frame 61.png" alt="Casual">
+        <span>Casual</span>
+      </div>
+      <div class="card">
+        <img src="./img/image 13.png" alt="Formal">
+        <span>Formal</span>
+      </div>
+      <div class="card">
+        <img src="./img/Frame 64.png" alt="Party">
+        <span>Party</span>
+      </div>
+      <div class="card">
+        <img src="./img/Frame 63.jpg" alt="Gym">
+        <span>Gym</span>
+      </div>
+    </div>
+  </div>
+
+<div class="reviews-container">
+    <div class="reviews-title">OUR HAPPY CUSTOMERS</div>
+    <button class="arrow arrow-left" id="prevBtn">←</button>
+    <button class="arrow arrow-right" id="nextBtn">→</button>
+    <div class="reviews" id="reviews"></div>
+  </div>
+
+</main>
+
+
+
+<footer>
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+      <form id="newsletterForm">
+        <input type="email" id="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe to Newsletter</button>
+      </form>
+      <div id="notification" class="notification"></div>
+    </div>
+
+
+    <!-- Footer Links -->
+    <div class="footer-main">
+      <div class="brand">
+        <h3>NAIVE</h3>
+        <p>We have clothes that suit your style and which you’re proud to wear. From women to men.</p>
+        <div class="socials">
+          <a href="#">🌐</a>
+          <a href="#">👍</a>
+          <a href="#">📸</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Delivery Details</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>FAQ</h4>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Manage Deliveries</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Payments</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>NAIVE © 2000-2023, All Rights Reserved</p>
+      <div class="payments">
+        <img src="/img/Badge (1).png"alt="Visa">
+        <img src="/img/Badge (2).png"alt="MasterCard">
+        <img src="/img/Badge (3).png"alt="PayPal">
+        <img src="/img/Badge (4).png"alt="ApplePay">
+        <img src="/img/Badge.png"alt="GooglePay">
+      </div>
+    </div>
+  </footer>
+
+<script src="./js/home.js"></script>
 </body>
 </html>
