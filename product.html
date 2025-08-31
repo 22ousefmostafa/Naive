@@ -1,74 +1,287 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <title>NAIVE</title>
-    <link rel="stylesheet" href="./css/product.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAIVE - Premium Fashion Products</title>
+    <meta
+      name="description"
+      content="Discover premium fashion products from NAIVE. Browse shoes, jackets, and t-shirts from top international brands."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-text">NAIVE</span>
+        </a>
 
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-<div class="container">
-    <a class="navbar-brand" href="#">NAIVE</a>
-    <ul class="navbar-nav ms-auto">
-    <li class="nav-item"><a class="nav-link" href="/Home.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="/Product.html">Product</a></li>
-    <li class="nav-item"><a class="nav-link" href="/Contact us.html">Contact us</a></li>
-    <li class="nav-item"><a class="nav-link" href="/about us.html">About us</a></li>
-    <li class="nav-item"><a class="nav-link" href="/regesteration.html">Log out</a></li>
-    </ul>
-</div>
-</nav>
-
-<div class="container mt-4">
-    <!-- Shoes Category -->
-    <div class="category-title">Shoes</div>
-    <div class="slider-container">
-        <button class="slider-nav prev" onclick="scrollSlider('shoes', -1)">
-            <i class="fas fa-chevron-left"></i>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="shoes-slider" class="product-slider">
-            <!-- Shoes products will be inserted by JavaScript -->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="product.html"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account.html">Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cart-icon" href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count badge bg-primary">0</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <button class="slider-nav next" onclick="scrollSlider('shoes', 1)">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-    </div>
+      </div>
+    </nav>
 
-    <!-- Jackets Category -->
-    <div class="category-title">Jackets</div>
-    <div class="slider-container">
-        <button class="slider-nav prev" onclick="scrollSlider('jackets', -1)">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <div id="jackets-slider" class="product-slider">
-            <!-- Jackets products will be inserted by JavaScript -->
+    <main class="container mt-4">
+      <!-- Hero Section -->
+      <section class="hero-section text-center py-5">
+        <h1 class="hero-title">FIND CLOTHES</h1>
+        <h1 class="hero-title">THAT MATCHES</h1>
+        <h1 class="hero-title">YOUR STYLE</h1>
+
+        <div class="stats-container mt-4">
+          <div class="stat">
+            <h3 class="stat-number">200+</h3>
+            <p class="stat-label">International Brands</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat-number">2,000+</h3>
+            <p class="stat-label">High-Quality Products</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat-number">30,000+</h3>
+            <p class="stat-label">Happy Customers</p>
+          </div>
         </div>
-        <button class="slider-nav next" onclick="scrollSlider('jackets', 1)">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-    </div>
+      </section>
 
-    <!-- T-shirts Category -->
-    <div class="category-title">T-shirts</div>
-    <div class="slider-container">
-        <button class="slider-nav prev" onclick="scrollSlider('tshirts', -1)">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <div id="tshirts-slider" class="product-slider">
-            <!-- T-shirts products will be inserted by JavaScript -->
+      <!-- Featured Brands -->
+      <section class="brands-section py-4">
+        <h2 class="visually-hidden">Featured Brands</h2>
+        <div class="brand-logos d-flex justify-content-center flex-wrap">
+          <img src="./img/zara.png" alt="Zara" class="brand-logo" />
+          <img src="./img/gucci.png" alt="Gucci" class="brand-logo" />
+          <img src="./img/prada.png" alt="Prada" class="brand-logo" />
         </div>
-        <button class="slider-nav next" onclick="scrollSlider('tshirts', 1)">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-    </div>
-</div>
+      </section>
 
-<script src="./js/product.js"></script>
+      <!-- Product Categories -->
+      <section class="product-categories">
+        <!-- Shoes Category -->
+        <article class="category-section">
+          <div
+            class="category-header d-flex justify-content-between align-items-center mb-4"
+          >
+            <h2 class="category-title">Shoes</h2>
+            <a href="shoes.html" class="view-all-link"
+              >View All <i class="fas fa-arrow-right ms-1"></i
+            ></a>
+          </div>
 
-</body>
+          <div class="slider-container position-relative">
+            <button class="slider-nav prev" aria-label="Previous products">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div id="shoes-slider" class="product-slider d-flex overflow-auto">
+              <!-- Shoes products will be inserted by JavaScript -->
+            </div>
+
+            <button class="slider-nav next" aria-label="Next products">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Jackets Category -->
+        <article class="category-section mt-5">
+          <div
+            class="category-header d-flex justify-content-between align-items-center mb-4"
+          >
+            <h2 class="category-title">Jackets</h2>
+            <a href="jackets.html" class="view-all-link"
+              >View All <i class="fas fa-arrow-right ms-1"></i
+            ></a>
+          </div>
+
+          <div class="slider-container position-relative">
+            <button class="slider-nav prev" aria-label="Previous products">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div
+              id="jackets-slider"
+              class="product-slider d-flex overflow-auto"
+            >
+              <!-- Jackets products will be inserted by JavaScript -->
+            </div>
+
+            <button class="slider-nav next" aria-label="Next products">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- T-shirts Category -->
+        <article class="category-section mt-5">
+          <div
+            class="category-header d-flex justify-content-between align-items-center mb-4"
+          >
+            <h2 class="category-title">T-shirts</h2>
+            <a href="tshirts.html" class="view-all-link"
+              >View All <i class="fas fa-arrow-right ms-1"></i
+            ></a>
+          </div>
+
+          <div class="slider-container position-relative">
+            <button class="slider-nav prev" aria-label="Previous products">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div
+              id="tshirts-slider"
+              class="product-slider d-flex overflow-auto"
+            >
+              <!-- T-shirts products will be inserted by JavaScript -->
+            </div>
+
+            <button class="slider-nav next" aria-label="Next products">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3 class="footer-brand">NAIVE</h3>
+            <p class="footer-description">
+              Fashion that speaks to your individuality and style.
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" aria-label="Facebook" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Twitter" class="social-link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Pinterest" class="social-link"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+            <h4 class="footer-heading">SHOP</h4>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">All Products</a></li>
+              <li><a href="#">Men's Fashion</a></li>
+              <li><a href="#">Women's Fashion</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">New Arrivals</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+            <h4 class="footer-heading">HELP</h4>
+            <ul class="footer-links list-unstyled">
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h4 class="footer-heading">NEWSLETTER</h4>
+            <p class="footer-newsletter-text">
+              Subscribe to get special offers, free giveaways, and new arrivals.
+            </p>
+            <form class="newsletter-form mt-3">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email address"
+                  aria-label="Email address"
+                  required
+                />
+                <button type="submit" class="btn btn-outline-light">
+                  Subscribe
+                </button>
+              </div>
+              <small class="form-text d-block mt-2"
+                >By subscribing, you agree to our Privacy Policy and consent to
+                receive updates from our company.</small
+              >
+            </form>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <p class="copyright mb-2 mb-md-0">
+            &copy; 2025 NAIVE. All rights reserved.
+          </p>
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa me-2" aria-label="Visa"></i>
+            <i class="fab fa-cc-mastercard me-2" aria-label="Mastercard"></i>
+            <i class="fab fa-cc-amex me-2" aria-label="American Express"></i>
+            <i class="fab fa-cc-paypal" aria-label="PayPal"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/product.js"></script>
+  </body>
 </html>
