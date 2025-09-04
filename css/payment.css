@@ -1,0 +1,51 @@
+    body { font-family: Arial, sans-serif; margin: 0; padding: 30px; background: #fff; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 20px; }
+    .checkout-container { display: flex; gap: 20px; }
+    .checkout-items { flex: 2; background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 0 8px rgba(0,0,0,0.05); }
+    .checkout-item { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #eee; padding: 15px 0; }
+    .checkout-item:last-child { border-bottom: none; }
+    .checkout-item img { width: 70px; height: 70px; border-radius: 8px; margin-right: 15px; }
+    .item-info { flex: 1; }
+    .item-info h3 { margin: 0; font-size: 16px; font-weight: bold; }
+    .item-info p { margin: 3px 0; font-size: 13px; color: #555; }
+    .item-price { font-weight: bold; font-size: 16px; margin-right: 15px; }/* Quantity controls */
+    .quantity-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .qty-btn {
+      background: #000000;
+      color: white;
+      border: none;
+      width: 26px;
+      height: 26px;
+      border-radius: 20%;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
+    .qty-value {
+      min-width: 20px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .remove-btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .order-summary { flex: 1; background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 0 8px rgba(0,0,0,0.05); height: fit-content; }
+    .order-summary h2 { margin-top: 0; font-size: 20px; font-weight: bold; }
+    .summary-row { display: flex; justify-content: space-between; margin: 8px 0; font-size: 14px; }
+    .summary-row.total { font-weight: bold; font-size: 18px; margin-top: 15px; }
+    .summary-row.discount { color: red; }
+    .place-order-btn { width: 100%; padding: 14px; background: black; color: white; border: none; border-radius: 30px; font-size: 16px; cursor: pointer; margin-top: 15px; }
