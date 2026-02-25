@@ -1,2 +1,11 @@
-# naive-store
- e-commerce website for  sneaker and apparel store name Naive Built with a modern tech stack including HTML5, CSS3, and Bootstrap for a fully responsive and visually striking user interface. The project features user authentication with animated login/registration forms, dynamic product catalogs, and a multi-page structure with seamless navigation.
+# naive-storeA fully responsive E-Commerce web application that allows users to browse products, add items to cart, and complete purchases.
+
+🔹 Features:
+- Product listing & categories
+- Shopping cart system
+- User authentication
+- Responsive design
+- Clean UI
+
+🔹 Tech Used:
+HTML | CSS | JavaScript | Firebase
